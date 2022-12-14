@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="Gestion.css">
+          <title>produit cosmétique</title>
+</head>
+<body>
+          <nav>
+            <img src="logo.jpg" alt="logo">
+            <h1>Produit de beauté
+                pour les profissionels </h1>
+          </nav>
+                 
+          <div class="background"></div>
+              <form >
+                <div class="style">
+                    <div class="label">
+                          <label for="nom">Nom :</label><br><br><br>
+                          <label for="Marque">Marque :</label> <br><br>
+                          <label for="Prix">Prix :</label><br><br><br>
+                          <label for="date">Date :</label><br><br><br>
+                          <label for="type">Type :</label><br><br><br>
+                          <label for="promotion">Promotion :</label>
+                    </div>
+                         
+                    <div class="input">
+                          
+                          <input type="text" name="nom" placeholder="Nom" id="nom"> <br><br>
+                          <p id="nomError"></p>
+                          <select name="Marque" id="marque"><br>
+                              <option value=""></option>
+                              <option value="Dior">Dior</option>
+                              <option value="Zara">Zara</option>
+                              <option value="Coco chanel">Coco chanel</option>
+                              <option value="Morganic">Morganic</option>
+                              <option value="Gucci">Gucci</option>
+                          </select><br><br>
+                          <p id="marqueError"></p>
+                          <input type="text" name="Prix" placeholder="Prix" id="prix"><br><br>
+                          <p id="prixError"></p>
+                          <input type="date" name="date" id="date"><br><br>
+                          <p id="dateError"></p>
+                          <select name="type" id="type"><br>
+                              <option value=""></option>
+                              <option value="Hygiène et toilette">Hygiène et toilette</option>
+                              <option value="Produits solaires">Produits solaires</option>
+                              <option value="Soins esthétiques">Soins esthétiques</option>
+                              <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+                              <option value="Produits de maquillages">Produits de maquillages</option>
+                              <option value="Entretien Capillair">Entretien Capillaire</option>
+                              <option value="Parfums">Parfums</option>
+                          </select><br><br>
+                          <p id="typeError"></p>
+                        <div class="radio">
+                          <input type="radio" id="ouipromo" name="promotion" >oui
+                          <input type="radio" id="nonpromo" name="promotion" >non
+                          <p id="promo"></p>
+                        </div>
+                      <input type="button" id="ajouter" value="Ajouter">
+                    </div>
+                </div>     
+                  <div  class="style">
+          
+                      <table id="tableau">
+                          <tr>
+                              <th>Name</th>
+                              <th>Brand</th>
+                              <th>Price</th>
+                              <th>Date</th>
+                              <th>Type</th>
+                              <th>promotion</th>
+                              <th>Actions</th>
+                          </tr>
+                          <tbody id="tbody"></tbody>
+                      </table>
+                  </div>
+                 
+              </form>
+</body>
+<script src="Gestion.js"></script>
+</html>
+
+
